@@ -5,9 +5,9 @@ function Player (playerMark) {
 Player.prototype.scoreBoard = function(postion) {
   var holder = "";
   return holder += postion;
-}
+};
 
-Player.prototype.winningCheck = function(holder) {
+Player.prototype.winningCheck = function(score) {
   var winner = " ";
   var winningCombo = ["abc",
                      "def",
@@ -19,9 +19,9 @@ Player.prototype.winningCheck = function(holder) {
                      "aei"];
 
   winningCombo.forEach(function(index) {
-   if (holder === index) {
+   if (score === index) {
      winner = "player win";
-   }
+   };
  });
  return winner;
 };
