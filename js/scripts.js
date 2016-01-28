@@ -2,16 +2,56 @@ function Player (playerMark) {
   this.playerMark = playerMark;
 };
 
-
-
 Player.prototype.scoreBoard = function(postion) {
   var holder = "";
   return holder += postion;
 }
-square.push()
-square = "abc";
 
+Player.prototype.winningCheck = function(holder) {
+  
+  var winner = " ";
+//  console.log(holder);
+ var winningCombo = ["abc",
+                     "def",
+                     "ghi",
+                     "adg",
+                     "beh",
+                     "cfi",
+                     "ceg",
+                     "aei"];
 
+ winningCombo.forEach(function(i) {
+   //console.log(holder);
+   //console.log("i is: " + i);
+   if (holder === i) {
+     winner = "player win";
+   }
+
+ });
+ return winner;
+};
+
+// Player.prototype.winningCheck = function(postionHolder) {
+//   var winningCombo = ["abc",
+//                       "def",
+//                       "ghi",
+//                       "adg",
+//                       "beh",
+//                       "cfi",
+//                       "ceg",
+//                       "aei"
+//                      ];
+//   winningCombo.forEach(function(holder){
+//     if (positionHolder === holder) {
+//       alert("Player win");
+//     }
+//   });
+// }
+//
+//
+//
+//
+//
 
 
 
