@@ -8,6 +8,49 @@
     <title>Tic Tac Toe</title>
   </head>
   <body>
-
+    <div class="jumbotron">
+      <h1>Tic Tac Toe!</h1>
+    </div>
+    <form id="new-contact">
+      <div class="form-group">
+        <label for="player1">Player 1 choose</label>
+        <input type="text"  id="player1Icon">
+        <label for="player2">Player 2 choose</label>
+        <input type="text"  id="player2Icon">
+        <button type="submit"class="btn btn-primary btn play">Play!</button>
+      </div>
+    </form>
+    <div class="container">
+      <div class="board">
+        <div class="row">
+          <div class="col-sm-4 col-sm-push-4">
+            <button type="click" class="btn btn-primary btn-lg game" id="a"></button>
+            <button type="click" class="btn btn-primary btn-lg game" id="b"></button>
+            <button type="click" class="btn btn-primary btn-lg game" id="c"></button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-sm-push-4">
+            <button type="click" class="btn btn-primary btn-lg game" id="d"></button>
+            <button type="click" class="btn btn-primary btn-lg game" id="e"></button>
+            <button type="click" class="btn btn-primary btn-lg game" id="f"></button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-sm-push-4">
+            <button type="click" class="btn btn-primary btn-lg game" id="g"></button>
+            <button type="click" class="btn btn-primary btn-lg game" id="h"></button>
+            <button type="click" class="btn btn-primary btn-lg game" id="i"></button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-sm-push-4">
+            <div class="clear">
+              <button type="click" class="btn btn-primary btn-lg clear-board" id="clear">Clear Board</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
